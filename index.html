@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="КодКласс">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<title>КодКласс</title>
+
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<link rel="stylesheet" href="css/stylesm.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9-eEqGiv8c_Lmi5a8z4-cMtcIsgXf1Jk"></script>
+
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '282650512265800');
+		fbq('track', 'PageView');
+	</script>
+
+
+</head>
+
+<body>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=282650512265800&ev=PageView&noscript=1" /></noscript>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="#" class="logo">
+					<img class="logo-img" src="images/logo.png" alt="logo">
+				</a>
+				<p class="header__wrapper-description d-none d-md-block">Сеть школ программирования для детей от 5 до 16
+					лет</p>
+				<!--
+				<div class="header__loc">
+					<p class="header__text">Выбрать город</p>
+				</div>
+-->
+				<div class="header__phone">
+					<a href="tel:+74956498306" class="header__phone-link">+7 (495) 649-83-06</a>
+				</div>
+				<div id="menu" class="menu">
+					<p class="menu__text d-none d-md-block">Меню</p>
+					<i class="menu__burger"></i>
+					<div class="menu__wrapper">
+						<ul class="menu__list">
+							<li class="menu__list-item"><a href="#about" class="menu__list-link">Обучение</a></li>
+							<li class="menu__list-item"><a href="#courses" class="menu__list-link">Курсы</a></li>
+							<li class="menu__list-item"><a href="#advantages" class="menu__list-link">Преимущества</a>
+							</li>
+							<li class="menu__list-item"><a href="#success" class="menu__list-link">Выпускники</a></li>
+							<li class="menu__list-item"><a href="#testimonials" class="menu__list-link">Отзывы</a></li>
+							<li class="menu__list-item"><a href="#teachers" class="menu__list-link">Преподаватели</a>
+							</li>
+							<li class="menu__list-item"><a href="#slides" class="menu__list-link">Школы</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-5 offset-lg-1">
+					<h1 class="header__title">Современное образование - секрет успешного будущего вашего ребенка</h1>
+					<p class="header__description header__arrow">Запишитесь на бесплатную консультацию с преподавателем
+						и получите скидку 20%</p>
+					<a onclick="openModal()" class="button">Записаться на открытый урок</a>
+				</div>
+				<div class="col-6 d-none d-md-block">
+					<div class="header__img-wrapper"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<h2 class="main-title">Программирование - навык ХХI века</h2>
+					<!--					<p class="about__description"><span class="orange">Код</span><span class="blue">Класс</span> - это школа, в которой мы даем Вашему ребенку возможность наряду с общим образованием освоить навыки программирования.</p>-->
+					Без знаний программирования нельзя будет представить ни одну профессию через 10 лет. От медицины до
+					недвижимости.
+					<p class="about__description"><span class="bold">Зачем это моему ребенку?</span></p>
+				</div>
+				<div class="col-12 col-lg-8">
+					<div class="about__list-wrapper">
+						<p class="about__list-title">зачем?</p>
+						<ul class="about__list about__arrow">
+							<li class="about__list-item">
+								<p class="about__list-text">Кодинг помогает ребенку развить уровень логики,
+									алгоритмического и аналитического мышления.</p>
+							</li>
+							<li class="about__list-item">
+								<p class="about__list-text">На уроках программирования дети изучают математику, физику и
+									другие школьные предметы. Значительно повышается успеваемость.</p>
+							</li>
+							<li class="about__list-item">
+								<p class="about__list-text">Программист - самая востребованная профессия со средней
+									зарплатой 114 000р. по данным hh.ru</p>
+							</li>
+						</ul>
+						<div class="about__start d-none d-sm-block"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="courses" id="courses">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<ul id="slider_courses-indicators" class="courses__list">
+						<li class="courses__list-item">
+							<a class="courses__list-link courses__list-link--active">5-6 лет</a>
+						</li>
+						<li class="courses__list-item">
+							<a class="courses__list-link">7-8 лет</a>
+						</li>
+						<li class="courses__list-item">
+							<a class="courses__list-link">9-10 лет</a>
+						</li>
+						<li class="courses__list-item">
+							<a class="courses__list-link">10-12 лет</a>
+						</li>
+						<li class="courses__list-item">
+							<a class="courses__list-link">12-15 лет</a>
+						</li>
+						<li class="courses__list-item">
+							<a class="courses__list-link">12-15 лет*</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1 slider__arrow" onclick="prevSlide()">
+					<i class="slider__arrow-icon slider__arrow-icon--left"></i>
+				</div>
+				<div class="col-12 col-sm-10 col-md-9">
+					<!-- Slider with courses info -->
+					<div id="slider_courses" class="courses__wrapper">
+						<div class="courses_slider-item active">
+							<h3 class="main-title">Курс Вундеркинд</h3>
+							<p class="courses__wrapper-subtitle">уверенное начало для Вашего ребенка</p>
+							<p class="courses__wrapper-text">Курс Start для детей 1-2 класса<br>общеобразовательной
+								школы (~ 5-6 лет)</p>
+							<p class="courses__wrapper-lessons"><span class="bold">Длительность:</span> ​ 1 учебный год
+								- 32 занятия по 1,5 часа</p>
+							<div class="courses__moreinfo">
+								<a href="#" class="courses__moreinfo-link" target="_blank"><i
+										class="courses__moreinfo-icon"></i>подробнее о курсе</a>
+							</div>
+							<div class="courses__document">
+								<a href="https://code-class.ru/files/programm_5-7.pdf" target="_blank"
+									onclick="openModal()" class="courses__document-link">
+									<i class="courses__document-icon"></i>
+									<span class="link-text">получить программу обучения</span>
+								</a>
+							</div>
+						</div>
+						<div class="courses_slider-item">
+							<h3 class="main-title">Курс Junior</h3>
+							<p class="courses__wrapper-subtitle">уверенное начало для Вашего ребенка</p>
+							<p class="courses__wrapper-text">Курс Junior для детей 1-2 класса<br>общеобразовательной
+								школы (~ 7-8 лет)</p>
+							<p class="courses__wrapper-lessons"><span class="bold">Длительность:</span> ​ 1 учебный год
+								- 32 занятия по 1,5 часа</p>
+							<div class="courses__moreinfo">
+								<a href="http://schoolcode.tilda.ws/Junior" class="courses__moreinfo-link"
+									target="_blank"><i class="courses__moreinfo-icon"></i>подробнее о курсе</a>
+							</div>
+							<div class="courses__document">
+								<a href="#" onclick="openModal()" class="courses__document-link">
+									<i class="courses__document-icon"></i>
+									<span class="link-text">получить программу обучения</span>
+								</a>
+							</div>
+						</div>
+						<div class="courses_slider-item">
+							<h3 class="main-title">Курс Middle</h3>
+							<p class="courses__wrapper-subtitle">уверенное начало для Вашего ребенка</p>
+							<p class="courses__wrapper-text">Курс Middle для детей 3-4 класса<br> общеобразовательной
+								школы (~ 9-10 лет)</p>
+							<p class="courses__wrapper-lessons"><span class="bold">Длительность:</span> ​ 1 учебный год
+								- 32 занятия по 1,5 часа</p>
+							<div class="courses__moreinfo">
+								<a href="http://schoolcode.tilda.ws/Middle" class="courses__moreinfo-link"
+									target="_blank"><i class="courses__moreinfo-icon"></i>подробнее о курсе</a>
+							</div>
+							<div class="courses__document">
+								<a href="#" onclick="openModal()" class="courses__document-link">
+									<i class="courses__document-icon"></i>
+									<span class="link-text">получить программу обучения</span>
+								</a>
+							</div>
+						</div>
+						<div class="courses_slider-item">
+							<h3 class="main-title">Курс High</h3>
+							<p class="courses__wrapper-subtitle">уверенное начало для Вашего ребенка</p>
+							<p class="courses__wrapper-text">Курс High для детей 4-6 класса<br>общеобразовательной школы
+								(~ 10-12 лет)</p>
+							<p class="courses__wrapper-lessons"><span class="bold">Длительность:</span> ​ 1 учебный год
+								- 32 занятия по 1,5 часа</p>
+							<div class="courses__moreinfo">
+								<a href="http://schoolcode.tilda.ws/High" class="courses__moreinfo-link"
+									target="_blank"><i class="courses__moreinfo-icon"></i>подробнее о курсе</a>
+							</div>
+							<div class="courses__document">
+								<a href="#" onclick="openModal()" class="courses__document-link">
+									<i class="courses__document-icon"></i>
+									<span class="link-text">получить программу обучения</span>
+								</a>
+							</div>
+						</div>
+						<div class="courses_slider-item">
+							<h3 class="main-title">Курс Super</h3>
+							<p class="courses__wrapper-subtitle">уверенное начало для Вашего ребенка</p>
+							<p class="courses__wrapper-text">Курс Super для детей 6-9 класса<br>общеобразовательной
+								школы (~ 12-15 лет)</p>
+							<p class="courses__wrapper-lessons"><span class="bold">Длительность:</span> ​ 1 учебный год
+								- 32 занятия по 1,5 часа</p>
+							<div class="courses__moreinfo">
+								<a href="http://schoolcode.tilda.ws/Super" class="courses__moreinfo-link"
+									target="_blank"><i class="courses__moreinfo-icon"></i>подробнее о курсе</a>
+							</div>
+							<div class="courses__document">
+								<a href="#" onclick="openModal()" class="courses__document-link">
+									<i class="courses__document-icon"></i>
+									<span class="link-text">получить программу обучения</span>
+								</a>
+							</div>
+						</div>
+						<div class="courses_slider-item">
+							<h3 class="main-title">Курс Expert</h3>
+							<p class="courses__wrapper-subtitle">уверенное начало для Вашего ребенка</p>
+							<p class="courses__wrapper-text">Курс Expert для детей 6-9 класса<br>общеобразовательной
+								школы (~ 12-15 лет)</p>
+							<p class="courses__wrapper-lessons"><span class="bold">Длительность:</span> ​ 1 учебный год
+								- 32 занятия по 1,5 часа</p>
+							<div class="courses__moreinfo">
+								<a href="http://schoolcode.tilda.ws/Expert" class="courses__moreinfo-link"
+									target="_blank"><i class="courses__moreinfo-icon"></i>подробнее о курсе</a>
+							</div>
+							<div class="courses__document">
+								<a href="#" onclick="openModal()" class="courses__document-link">
+									<i class="courses__document-icon"></i>
+									<span class="link-text">получить программу обучения</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- END slider with courses info -->
+					<div class="courses__label"></div>
+					<div class="magazine"></div>
+				</div>
+				<div class="col-1 offset-1 slider__arrow" onclick="nextSlide()">
+					<i class="slider__arrow-icon slider__arrow-icon--right"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages" id="advantages">
+		<div class="container">
+			<h2 class="main-title">Преимущества обучения</h2>
+			<div class="row">
+				<div class="col-md-6 col-lg-4 advantages__wrapper">
+					<i class="advantages__item">
+						<img class="advantages__item-img" src="images/icons/calculator.png" alt="adv">
+					</i>
+					<p class="advantages__description">Занятия по программированию улучшают знания по математике и
+						информатике</p>
+				</div>
+				<div class="col-md-6 col-lg-4 advantages__wrapper">
+					<i class="advantages__item">
+						<img class="advantages__item-img" src="images/icons/meeting.png" alt="adv">
+					</i>
+					<p class="advantages__description">У ребенка появляется умное окружение - единомышленники, с
+						которыми он будет тянуться к знаниям</p>
+				</div>
+				<div class="col-md-6 col-lg-4 advantages__wrapper">
+					<i class="advantages__item">
+						<img class="advantages__item-img" src="images/icons/smartphone.png" alt="adv">
+					</i>
+					<p class="advantages__description">Мы обучаем программированию, через создание компьютерных игр,
+						мобильных приложений, мультфильмов и графики</p>
+				</div>
+				<div class="col-md-6 col-lg-4 advantages__wrapper">
+					<i class="advantages__item">
+						<img class="advantages__item-img" src="images/icons/idea.png" alt="adv">
+					</i>
+					<p class="advantages__description">Ребенок будет обучаться по методикам, утвержденным МГПУ</p>
+				</div>
+				<div class="col-md-6 col-lg-4 advantages__wrapper">
+					<i class="advantages__item">
+						<img class="advantages__item-img" src="images/icons/profiles.png" alt="adv">
+					</i>
+					<p class="advantages__description">Готовое портфолио из 64 проектов</p>
+				</div>
+				<div class="col-md-6 col-lg-4 advantages__wrapper">
+					<i class="advantages__item">
+						<img class="advantages__item-img" src="images/icons/marks.png" alt="adv">
+					</i>
+					<p class="advantages__description">Средний балл в школе у наших выпускников 4,56</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tryfree">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+						onload="if(submitted)  {window.location='thank.html';}"></iframe>
+					<form class="form"
+						action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdFMipcYxdAyHvjyN5tsPaICgxaLeZcJ777CY0JE7LDhV2oGw/formResponse"
+						method="post" target="hidden_iframe" onsubmit="submitted=true;">
+						<h2 class="main-title">Запишитесь на бесплатную консультацию с<br><span
+								class="orange">преподавателем</span></h2>
+						<p class="tryfree__description">На уроке ребенок создаст свою первую игру, познакомится с
+							преподавателем и узнает что будет на занятиях в течение года. </p>
+						<input type="text" name="entry.239700764" class="field" placeholder="Имя, например: Наталия"
+							required>
+						<input type="email" name="entry.1578319619" class="field"
+							placeholder="Еmail, например: natalia@mail.ru">
+						<input type="text" name="entry.1281300253" class="field"
+							placeholder="Телефон, например: +7 (495) 649-83-06" required>
+						<button class="button">Записаться сейчас!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="success" id="success">
+		<div class="container">
+			<div class="row">
+				<div class="col-7 offset-4">
+					<h2 class="main-title main-title--white main-title--right">Наши ученики -<br>победители и призеры
+						олимпиад и конкурсов</h2>
+				</div>
+				<div class="col-12 col-lg-7 offset-lg-4">
+					<div class="success__wrapper">
+						<div id="slider_success" class="success_slider">
+							<div class="success_slider-item active">
+								<p class="success__wrapper-name">Петя Иванов</p>
+								<p class="success__wrapper-age">12 лет</p>
+								<ul class="success__wrapper-list">
+									<li class="success__wrapper-item">Ходит в КодКласс 1,5 года</li>
+									<li class="success__wrapper-item">Создал 34 проекта в том числе клон игры Need For
+										Speed, 3 из которых победили на окружной олимпиаде</li>
+									<li class="success__wrapper-item">Подтянул оценку по математике до 4, хотя раньше
+										был троечником</li>
+									<li class="success__wrapper-item">Хочет стать разработчиком сайтов</li>
+								</ul>
+								<div class="success__wrapper-img">
+									<img src="images/content/graduator.jpg" alt="grad">
+								</div>
+							</div>
+							<div class="success_slider-item">
+								<p class="success__wrapper-name">Катя Федорова</p>
+								<p class="success__wrapper-age">8 лет</p>
+								<ul class="success__wrapper-list">
+									<li class="success__wrapper-item">Учится пол года</li>
+									<li class="success__wrapper-item">Создала игру Фея и волшебник, с которой заняла
+										второе место на внутренней олимпиаде КодКласс и выиграла VR очки</li>
+									<li class="success__wrapper-item"> Хочет стать программистом игр</li>
+								</ul>
+								<div class="success__wrapper-img">
+									<img src="images/content/graduator1.jpg" alt="grad">
+								</div>
+							</div>
+							<div class="success_slider-item">
+								<p class="success__wrapper-name">Петр Халибин</p>
+								<p class="success__wrapper-age">10 лет</p>
+								<ul class="success__wrapper-list">
+									<li class="success__wrapper-item">Будущий банкир</li>
+									<li class="success__wrapper-item">Создал свой айти стартап - мобильное приложение
+										для своего класса</li>
+									<li class="success__wrapper-item">Тройка по информатике превратилась в пять в
+										течение одного года</li>
+								</ul>
+								<div class="success__wrapper-img">
+									<img src="images/content/graduator2.jpg" alt="grad">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-10 offset-1 col-sm-5 offset-sm-7  col-lg-3 offset-lg-7">
+					<div class="pagination">
+						<div class="pagination__arrow" onclick="prevSlideSuccess()">
+							<i class="pagination__arrow-icon"></i>
+							<p class="pagination__arrow-text">предыдущий</p>
+						</div>
+						<div class="pagination__item active"></div>
+						<div class="pagination__item"></div>
+						<div class="pagination__item"></div>
+						<div class="pagination__arrow" onclick="nextSlideSuccess()">
+							<i class="pagination__arrow-icon pagination__arrow-icon--right"></i>
+							<p class="pagination__arrow-text">следующий</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="testimonials" id="testimonials">
+		<div class="container">
+			<h2 class="main-title">Отзывы выпускников<br>школы и их родителей</h2>
+			<div class="testimonails__rewievs">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="testimonials__wrapper-img">
+							<img src="images/content/testim2.jpg" alt="test">
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="testimonials__wrapper-img">
+							<img src="images/content/testim3.jpg" alt="test">
+						</div>
+					</div>
+					<!--
+					<div class="col-12 col-md-6">
+						<div class="testimonials__wrapper-img">
+							<img src="images/content/testim3.jpg" alt="test">
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="testimonials__wrapper-img">
+							<img src="images/content/testim2.jpg" alt="test">
+						</div>
+					</div>
+-->
+				</div>
+			</div>
+
+			<div class="testimonails__videos">
+				<div class="row">
+					<div class="col-6 col-md-3">
+						<div class="testimonials__wrapper-video">
+							<iframe width="225" height="115"
+								src="//vk.com/video_ext.php?oid=-120568493&id=456239021&hash=fbd070f60c78bea4&hd=2"
+								frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="testimonials__wrapper-video">
+							<iframe width="225" height="115" src="https://www.youtube.com/embed/aATqubkhCEU"
+								frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="testimonials__wrapper-video">
+							<iframe width="225" height="115"
+								src="//vk.com/video_ext.php?oid=-120568493&id=456239027&hash=601f317a5b83497f&hd=2"
+								frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="testimonials__wrapper-video">
+							<iframe width="225" height="115"
+								src="//vk.com/video_ext.php?oid=-120568493&id=456239030&hash=03f1aada924a27eb&hd=2"
+								frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="stats">
+		<div class="container">
+			<div class="stats__button-wrapper">
+				<a onclick="openModal()" class="button">Записаться сейчас!</a>
+			</div>
+			<div class="row">
+				<div class="col-5 col-lg-4 offset-lg-1">
+					<p class="main-title"><span class="main-title--indexed"><span class="orange">1320 родителей</span>
+							доверяют нам своих детей сегодня</span></p>
+				</div>
+			</div>
+			<div class="stats__wrapper">
+				<div class="stats__item stats__item--right stats__item--lb">
+					<span class="orange">3 года</span>
+					<p class="stats__text">на рынке детского образования</p>
+				</div>
+				<div class="stats__item stats__item--right stats__item--lc">
+					<span class="orange">25</span>
+					<p class="stats__text">школ по Москве</p>
+				</div>
+				<div class="stats__item stats__item--center stats__item--cc">
+					<span class="orange">10</span>
+					<p class="stats__text">представительств по Росиии</p>
+				</div>
+				<div class="stats__item stats__item--left stats__item--rc">
+					<span class="orange">>2000+</span>
+					<p class="stats__text">учеников обучившихся по нашим методикам</p>
+				</div>
+				<div class="stats__item stats__item--left stats__item--rb">
+					<span class="orange">>200</span>
+					<p class="stats__text">высококвалифицированных преподавателей</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="teachers">
+		<div class="container" id="teachers">
+			<div class="row">
+				<div class="col-8 offset-2 col-lg-3 offset-xl-1">
+					<p class="main-title main-title--white">Записаться на курс</p>
+				</div>
+				<div class="col-8 offset-2 offset-lg-0">
+					<form class="teachers__form"
+						action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdFMipcYxdAyHvjyN5tsPaICgxaLeZcJ777CY0JE7LDhV2oGw/formResponse"
+						method="post" target="hidden_iframe" onsubmit="submitted=true;">
+						<input type="text" name="entry.239700764" class="teachers__field"
+							placeholder="Имя, например: Наталия" required>
+						<input type="text" name="entry.1281300253" class="teachers__field"
+							placeholder="Телефон: +7 (495) 649-83-06" required>
+						<button class="button button--blue">Вперед!</button>
+					</form>
+				</div>
+			</div>
+			<div class="row teachers__wrap">
+				<div class="col-12 col-lg-9 offset-lg-3">
+					<h2 class="main-title main-title--right">Все преподаватели прошли трехэтапный отбор и программу
+						повышения квалификации</h2>
+					<div class="row">
+						<div class="col-12 col-sm-6 teachers__wrapper">
+							<div class="teachers__wrapper-img">
+								<img class="teachers__img" src="images/content/person1.jpg" alt="teach">
+							</div>
+							<div class="teachers__wrapper-text">
+								<p class="teachers__name bold">Елена Котова</p>
+								<p class="teachers__description">Специалист по ScratchJr, Scratch и Minecraft <br>Более
+									4 лет работает с детьми дошкольного возраста и учениками младших классов.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 teachers__wrapper">
+							<div class="teachers__wrapper-img">
+								<img class="teachers__img" src="images/content/person2.jpg" alt="teach">
+							</div>
+							<div class="teachers__wrapper-text">
+								<p class="teachers__name bold">Александра Кручинина</p>
+								<p class="teachers__description">Специалист по Scratch, ScratchJr и Minecraft
+									<br>Работает программистом. Опыт работы в сфере репетиторства по математике,
+									информатике и программированию более 2 лет.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 teachers__wrapper">
+							<div class="teachers__wrapper-img">
+								<img class="teachers__img" src="images/content/person3.jpg" alt="teach">
+							</div>
+							<div class="teachers__wrapper-text">
+								<p class="teachers__name bold">Анна Алексеева</p>
+								<p class="teachers__description">Ведущий методист учебных программ<br>Педагог математики
+									и информатики, педагог ТРИЗ. Опыт работы с детьми - более 10 лет. </p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 teachers__wrapper">
+							<div class="teachers__wrapper-img">
+								<img class="teachers__img" src="images/content/person4.jpg" alt="teach">
+							</div>
+							<div class="teachers__wrapper-text">
+								<p class="teachers__name bold">Вячеслав Загребин</p>
+								<p class="teachers__description">Преподаватель по ScratchJr, Scratch и Minecraft
+									<br>Опыт работы - 4 года. Преподаватель информатики со 2 по 11 классы. Сфера
+									занятости - IT.</p>
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="teachers__wrapper-link">
+						<a href="#" class="teachers__link">Показать всех преподавателей</a>
+					</div>
+-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="consult">
+		<div class="container">
+			<div class="row consult__wrapper">
+				<div class="col-12 col-sm-4">
+					<p class="consult__text bold">Остались вопросы</p>
+					<p class="consult__text">Получите бесплатную консультацию.</p>
+				</div>
+				<div class="col-12 col-sm-8">
+					<form class="consult__form"
+						action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdFMipcYxdAyHvjyN5tsPaICgxaLeZcJ777CY0JE7LDhV2oGw/formResponse"
+						method="post" target="hidden_iframe" onsubmit="submitted=true;">
+						<input type="text" name="entry.239700764" class="consult__field"
+							placeholder="Имя, например: Наталия" required>
+						<input type="text" name="entry.1281300253" class="consult__field"
+							placeholder="Телефон: +7 (495) 649-83-06" required>
+						<button class="button button--blue">Вперед!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="slider" id="slides">
+		<div class="container">
+			<div class="row">
+				<h2 class="col-8 offset-2 main-title"><span class="orange">30</span> оборудованных,<br>безопасных и
+					комфортных школ по всей Москве</h2>
+				<div class="col-12">
+					<div class="row slider__wrapper">
+						<div class="col-2 slider__arrow" onclick="prevSlideRooms()">
+							<i class="slider__arrow-icon slider__arrow-icon--left"></i>
+							<p class="slider__arrow-text">предыдущий</p>
+						</div>
+						<div class="col-10 offset-1 col-sm-8 offset-sm-0 slider__img">
+							<img src="images/content/lesson.jpg" alt="" class="slider__img_item active">
+							<img src="images/content/lesson1.jpg" alt="" class="slider__img_item">
+							<img src="images/content/lesson2.jpg" alt="" class="slider__img_item">
+							<img src="images/content/lesson3.jpg" alt="" class="slider__img_item">
+							<img src="images/content/lesson4.jpg" alt="" class="slider__img_item">
+							<img src="images/content/lesson5.jpg" alt="" class="slider__img_item">
+						</div>
+						<div class="col-2 slider__arrow" onclick="nextSlideRooms()">
+							<i class="slider__arrow-icon slider__arrow-icon--right"></i>
+							<p class="slider__arrow-text">следующий</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<div id="map"></div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-3 col-lg-2">
+					<a href="#" class="footer__logo">
+						<img class="logo-img" src="images/logo.png" alt="logo">
+					</a>
+					<p class="footer__info">Сеть школ программирования для детей от 5 до 16 лет</p>
+				</div>
+				<div class="col-12 col-md-6 offset-lg-1 col-lg-4 ">
+					<ul class="footer__menu">
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">франшиза</a></li>
+						<li class="footer__menu-item"><a href="https://code-class.ru/newpay/"
+								class="footer__menu-link">оплата</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">робототехника</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">лагерь</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">курсы английского</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">онлайн обучение</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-3 offset-lg-2 col-lg-3">
+					<ul class="footer__contacts">
+						<li class="footer__phone">
+							<a href="tel:+74956498306" class="footer__contact-link">+7 (495) 649-83-06</a>
+						</li>
+						<li class="footer__email">
+							<a href="mailto:info@code-class.ru" class="footer__contact-link">info@code-class.ru</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<p class="footer__text">ООО «Кодкласс»</p>
+				<p class="footer__text">ИНН: 9709002766</p>
+				<a href="#" class="footer__link">Публичная оферта</a>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!--  TEST FORM  -->
+
+
+
+
+	<!--	END TEST FORM	-->
+
+	<div id="overlay" class=""></div>
+	<div class="popup" id="popup">
+		<div class="row">
+			<div class="col-12 col-sm-8">
+				<form class="form"
+					action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdFMipcYxdAyHvjyN5tsPaICgxaLeZcJ777CY0JE7LDhV2oGw/formResponse"
+					method="post" target="hidden_iframe" onsubmit="submitted=true;">
+					<h2 class="main-title">Оставь <br class="hidebr">заявку</h2>
+					<input type="text" name="entry.239700764" class="field" placeholder="Имя, например: Наталия"
+						required>
+					<input type="email" name="entry.1578319619" class="field"
+						placeholder="Еmail, например: natalia@mail.ru">
+					<input type="text" name="entry.1281300253" class="field"
+						placeholder="Телефон, например: +7 (495) 649-83-06" required>
+					<button class="button">Записаться сейчас!</button>
+				</form>
+			</div>
+		</div>
+		<div class="magazine"></div>
+	</div>
+	<script>
+
+	</script>
+
+
+	<script src="js/main.js"></script>
+	<script src="js/slider.js"></script>
+
+
+</body>
+
+</html>
